@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Registration</h2>
+    <form id="registrationForm" onsubmit="return validateForm()">
+      <input type="text" id="fullName" placeholder="Full Name" required>
+      <input type="tel" id="contact" placeholder="Contact" required>
+      <label for="date">Date of Birth:</label> <br>
+      <input type="date" id="dob" required>
+      <input type="email" id="email" placeholder="Email ID" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <label for="gender">Gender:</label>
+      <select id="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="login.html"> Login</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
